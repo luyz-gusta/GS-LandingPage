@@ -1,0 +1,50 @@
+.sec-beneficios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    background-image: url(../assets/bg-sec-5.png);
+}
+
+.sec-beneficios h1 {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--white-default);
+}
+
+.container-beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.box-beneficio {
+    display: flex;
+    gap: 24px;
+    width: 40%;
+    padding: 30px 36px;
+    border-radius: 20px;
+    background: rgba(84, 170, 169, 0.79);
+}
+
+.textos-beneficio {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.textos-beneficio h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color1-dark-green);
+}
+
+.textos-beneficio p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--white-default);
+}

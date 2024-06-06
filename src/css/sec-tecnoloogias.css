@@ -1,0 +1,56 @@
+.sec-tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../assets/bg-sec-2.png);
+    padding: 32px 120px;
+}
+
+.sec-tecnologias h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+    color: var(--white-default);
+}
+
+.container-cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 200px;
+    width: 100%;
+}
+
+.card-tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    height: 600px;
+    padding: 20px 24px 20px 24px;
+    border-radius: 4px;
+    background-color: var(--white-default);
+}
+
+.box-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-tech h2 {
+    font-size: 1.25em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card-tech p {
+    font-size: 12px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.icon {
+    width: 128px;
+    height: 128px;
+}

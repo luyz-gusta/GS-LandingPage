@@ -1,0 +1,53 @@
+.sec-objetivos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0px 200px;
+    background-image: url(../assets/bg-sec-3.png);
+}
+
+.sec-objetivos h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: var(--white-default);
+}
+
+.container-objetivos {
+    display: flex;
+    width: 100%;
+}
+
+.container-objetivos img {
+    width: auto;
+    height: 100%;
+}
+
+.box-objetivos {
+    padding: 52px 42px;
+    width: 45%;
+    height: 330px;
+    border-radius: 36px;
+    background: rgba(129, 129, 139, 0.1);
+}
+
+.box-objetivos h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 72.72px;
+    color: var(--white-default);
+}
+
+.box-objetivos p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 31.957px; /* 150% */
+    color: #9c9c9c;
+}
+
+.info-objetivos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 820px;
+    gap: 20px;
+}
