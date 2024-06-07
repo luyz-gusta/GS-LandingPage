@@ -48,3 +48,130 @@
     font-weight: 400;
     color: var(--white-default);
 }
+
+@media (max-width: 1440px) {
+    .sec-beneficios {
+        min-height: 100vh;
+        height: auto;
+    }
+
+    .container-beneficios {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .box-beneficio {
+        height: 20vw;
+    }
+
+    .textos-beneficio h2 {
+        font-size: 1rem;
+    }
+
+    .textos-beneficio p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .box-beneficio {
+        width: 45%;
+        height: 20vw;
+        min-height: 250px;
+    }
+
+    .textos-beneficio h2 {
+        font-size: 1rem;
+    }
+
+    .textos-beneficio p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .box-beneficio {
+        width: 90%;
+        height: 20vw;
+        min-height: 250px;
+    }
+
+    .textos-beneficio h2 {
+        font-size: 1.5rem;
+    }
+
+    .textos-beneficio p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .box-beneficio {
+        width: 90%;
+        height: 20vw;
+        min-height: 250px;
+    }
+
+    .textos-beneficio h2 {
+        font-size: 1.25rem;
+    }
+
+    .textos-beneficio p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .box-beneficio {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 20vw;
+        min-height: 250px;
+    }
+
+    .sec-beneficios h1 {
+        font-size: 2rem;
+    }
+
+    .box-beneficio img {
+        width: auto;
+        height: 70%;
+    }
+
+    .textos-beneficio h2 {
+        font-size: 1.25rem;
+    }
+
+    .textos-beneficio p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-beneficios {
+        gap: 2rem;
+        margin-top: 28px;
+    }
+    .box-beneficio {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: max-content;
+        min-height: 250px;
+    }
+
+    .box-beneficio img {
+        width: auto;
+        height: 70%;
+    }
+
+    .textos-beneficio h2 {
+        font-size: 1.25rem;
+    }
+
+    .textos-beneficio p {
+        font-size: 0.8rem;
+    }
+}

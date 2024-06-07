@@ -183,7 +183,27 @@ footer {
     color: var(--white-default);
 }
 
+@media (max-width: 1200px) {
+    section {
+        min-height: 100vh;
+        height: auto;
+    }
+}
+
 @media (max-width: 1080px) {
+    section {
+        min-height: 100vh;
+        height: auto;
+    }
+    header img {
+        height: 60%;
+        width: auto;
+    }
+
+    .link-menu {
+        font-size: 1rem;
+    }
+
     .contt-email p {
         font-size: 1rem;
     }
@@ -205,8 +225,20 @@ footer {
 }
 
 @media (max-width: 920px) {
+    header {
+        padding: 0px 60px;
+    }
+
     footer {
         padding: 0px 60px;
+    }
+
+    .menu {
+        gap: 0.25rem;
+    }
+
+    .link-menu {
+        font-size: 0.75rem;
     }
 }
 
@@ -262,5 +294,99 @@ footer {
         width: 2.25rem;
         height: 2.25rem;
         font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 740px) {
+    .menuToggle span {
+        height: 3px;
+        display: flex;
+        border-top-color: transparent;
+        z-index: 2;
+    }
+
+    header img {
+        height: 40%;
+        max-height: 80px;
+        width: auto;
+    }
+
+    header {
+        background: rgba(26, 26, 26);
+        height: auto;
+        padding: 0rem 2rem;
+        padding-top: 1.6rem;
+        gap: 1rem;
+        padding-bottom: 1rem;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .menu {
+        background: rgba(26, 26, 26);
+        z-index: 2;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition:
+            opacity 0.5s ease,
+            max-height 2s ease;
+    }
+
+    .open {
+        opacity: 1;
+        max-height: 1000px;
+        /* Ajuste isso para uma altura máxima suficientemente grande */
+        transition:
+            opacity 0.8s ease,
+            max-height 3s ease;
+    }
+
+    /* ----- animations--------- */
+    /* clicked */
+    .menu-span.clicked:nth-child(1) {
+        height: 2px;
+        transform-origin: 0% 0%;
+        transform: rotate(45deg) translate(2px, 2px);
+        transition: ease-out 0.5s;
+    }
+
+    .menu-span.clicked:nth-child(2) {
+        display: none;
+    }
+
+    .menu-span.clicked:nth-child(3) {
+        height: 2px;
+        transform-origin: 0% 100%;
+        transform: rotate(-45deg) translate(2px, -2px);
+        transition: ease-out 0.5s;
+    }
+
+    /* unclicked */
+    .menu-span.unclicked {
+        transform: rotate(0) translate(0);
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+    }
+
+    .link-menu {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0.2rem;
+        font-size: 1.55rem;
+    }
+
+    .menu li {
+        display: flex;
+        width: 100%;
     }
 }
